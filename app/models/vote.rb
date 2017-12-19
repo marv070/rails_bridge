@@ -1,2 +1,3 @@
 class Vote < ApplicationRecord
-end
+    belongs_to :topic
+  end
