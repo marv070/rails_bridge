@@ -14,6 +14,7 @@
   <tbody>
     <% @topics.each do |topic| %>
   <tr>
+  <%= topic.votes.count %>
     <td><%= link_to topic.title, topic %></td>
     <th>Description</th>
     <td><%= pluralize(topic.votes.count, "vote") %></td>
